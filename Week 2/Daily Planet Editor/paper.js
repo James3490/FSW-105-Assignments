@@ -9,46 +9,42 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+var enemies = ["Lex", "Batman", "Darkseid", "Brainiac", "General Zod", "Doomsday"];
 
-function who_Wins (if_kryptonite , enemy_Name)
-{
-if (!if_kryptonite)
-{
-    return "Superman beats " +enemy_Name+ ", of course";
-}
-
-else{
-    return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemy_Name +" could possibly win this one.";
-}
-    }
-
-for (var i=0;i<enemies.length;i++)
-{
-    var if_kryptonite;
-    if (i%2=== 0) {
-        if_kryptonite = true;
+function whoWins(ifKryptonite, enemyName) {
+    if (!ifKryptonite) {
+        return "Superman beats " + enemyName + ", of course";
     } else {
-        if_kryptonite = false;
+        return "Depends on how quick Superman can get rid of the Kryptonite. " + enemyName + " could possibly win this one.";
     }
-    console.log(who_Wins (if_kryptonite ,enemies[i]));
 }
 
-function howAttractedIsLoisLaneToMe()
-{
+for (var i = 0; i < enemies.length; i++) {
+    var ifKryptonite;
+    if (i % 2 === 0) {
+        ifKryptonite = true;
+    } else {
+        ifKryptonite = false;
+    }
+    console.log(whoWins(ifKryptonite, enemies[i]));
+}
+
+function howAttractedIsLoisLaneToMe() {
     // 1 is not at all attracted, 10 is "super" attracted...
-    return Math.floor((Math.random()*10)+1);
+    return Math.floor((Math.random() * 10) + 1);
 }
 
-console.log(howAttractedIsLoisLaneToMe ()) ;
+console.log(howAttractedIsLoisLaneToMe());
 
-var clarkKent =true;
-var superman =false;
+var clarkKent = true;
+var superman = false;
 
-while (clarkKent){
+while (clarkKent) {
     console.log("I'm just a nerdy columnist");
-    var phoneBoothQuickChange =Math.random();
-    if (phoneBoothQuickChange>= 0.5) {
-        clarkKent=false;
-        superman=true;
-        console.log("Now I'm Superman!");}}
+    var phoneBoothQuickChange = Math.random();
+    if (phoneBoothQuickChange >= 0.5) {
+        clarkKent = false;
+        superman = true;
+        console.log("Now I'm Superman!");
+    }
+}
