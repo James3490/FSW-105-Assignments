@@ -68,7 +68,7 @@
 // console.log(typeof "true");
 
 // Write an if statement that checks to see if a variable has been defined or not
-// var x = 
+// var x = "boy"
 //   console.log(typeof x);
 
 // Write an if statement asking if "s" greater than 12?
@@ -100,3 +100,8 @@
 // Write a ternary statement that console.logs whether a number is odd or even.
 // var n = 15
 // n % 2 == 0 ? console.log("Even") : console.log("Odd");
+
+if (2 !== 2) {
+    console.log(false)
+} else { console.log(true)
+}
