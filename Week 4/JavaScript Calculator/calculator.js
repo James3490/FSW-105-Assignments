@@ -1,25 +1,20 @@
 var readlineSync = require('readline-sync');
 
-var userName = readlineSync.question('May I have your name? ');
-console.log('Hi ' + userName + '!');
+while (true) {
+var num1Int = readlineSync.questionInt('What is your first number?');
 
-var num1 = readlineSync.question ('What is your first number?');
-
-var num2 = readlineSync.question ('What is your second number?');
+var num2Int = readlineSync.question ('What is your second number?');
 
 var operation = readlineSync.question ('Please enter the operation to perform: + - * /: ')
 
-switch(operation) {
-    case "+":
-        console.log('The result is: ',  Number(num1) + Number(num2));
-    break;
-    case "-":
-    console.log('The result is: ',  Number(num1) - Number(num2));
-    break;
-    case "*":
-    console.log('The result is: ',Number(num1) * Number(num2));
-    break;
-    case "/":
-    console.log('The result is: ',Number(num1) / Number(num2));
-    break;
+if(operation == "+") {
+    console.log(Number(num1Int) + Number(num2Int));
+} else if (operation == "-") {
+    console.log(Number(num1Int) - Number(num2Int))
+} else if (operation == "*") {
+    console.log(Number(num1Int) * Number(num2Int))
+} else if(operation == "/") {
+    console.log(Number(num1Int) * Number(num2Int))
 }
+} 
+
