@@ -101,7 +101,7 @@
 // var n = 15
 // n % 2 == 0 ? console.log("Even") : console.log("Odd");
 
-if (2 !== 2) {
-    console.log(false)
-} else { console.log(true)
-}
+// if (2 !== 2) {
+//     console.log(false)
+// } else { console.log(true)
+// }
