@@ -32,7 +32,7 @@
 //     { name: "Paris Hilton", age: 5 },
 //     { name: "Kayne West", age: 16 },
 //     { name: "Bob Ziroll", age: 100 },
-//]
+// ]
 // const isOfAge = ofAge.filter(age => age.age >= 18)
 // console.log(isOfAge)
 
@@ -65,19 +65,22 @@
 // console.log(pName)
 
 //5 NOT DONE!
-// const person = [
-//     { name: "Angelina Jolie", age: 80 },
-//     { name: "Eric Jones", age: 2 },
-//     { name: "Paris Hilton", age: 5 },
-//     { name: "Kayne West", age: 16 },
-//     { name: "Bob Ziroll", age: 100 }]
-// const pName = person.map(nam => nam.name)
-// const pAge = person.map(ages => ages.age) 
-// const isOldEnough = function() {if(pAge > 18) {
-//         return (pName + (" Is old enough to go to the Matrix")) } else if(pAge < 18) {
-//         return (pName + (" is not old enough to go to the Matrix"))
+const person = [
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 }]
+// const pName = persons.map(nam => nam.name)
+// const pAge = persons.map(ages => ages.age) 
+// const isOldEnough = function() {
+//     if (person.age > 18) {
+//         return (person.name + (" Is old enough to go to the Matrix")) } else if(person.age < 18) {
+//         return (person.name + (" is not old enough to go to the Matrix"))
 //     }}
-//     console.log(isOldEnough)
+//     console.log(person.age)
+const isOldEnough = (arr => arr.map(object => (object.age < 18 ? object.name : object.age)))
+console.log(isOldEnough(person) + (" Is old enough to go to the Matrix"))
 
 //6 NOT DONE
 // const person = [
@@ -153,8 +156,8 @@
 
 //6
 
-//sort
-//1
+// sort
+// 1
 // const lToG = [1, 3, 5, 2, 90, 20]
 // lToG.sort((a, b) => a - b)
 // console.log(lToG)

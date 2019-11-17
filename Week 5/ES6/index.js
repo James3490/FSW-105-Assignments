@@ -39,12 +39,37 @@
 // const doMathSum = num.reduce((a, b) => a + b, 0)
 // console.log(doMathSum)
 
-//5
-const person = [
-    {fName: 'Jane', lName: 'Doe', age: 100}
-]
-// const who = function who(){
-//     return person.fName + person.lName
+//5 NOT DONE
+// const person = [
+//     {fName: 'Jane', lName: 'Doe', age: 100}
+// ]
+// const name = person.reduce(who => person.fName + person.lName)
+// console.log(name)
+
+//6 NOT DONE
+
+//7 NOT DONE
+// const animals = [
+//     {type: 'dog', name: 'Theodore'},
+//     {type: 'cat', name: 'Whiskers'},
+//     {type: 'pig', name: 'Piglette'},
+//     {type: 'dog', name: 'Sparky'}
+// ]
+// function filterForDogs(arr) {
+//     return arr.filter(animal => {
+//         if (animal.type === 'dog') {
+//             return true
+//         } else {
+//             return false
+//         }
+//     })
 // }
-const name = person.reduce(who => person.fName + person.lName)
-console.log(name)
+
+//8
+const name = 'Janice'
+const location = 'Hawaii'
+const example = `Hi ${name}!
+    Welcome to ${location}.
+    'I hope you enjoy your stay. Please ask the President of ${location} if you need anything.`;
+console.log(example)
+
