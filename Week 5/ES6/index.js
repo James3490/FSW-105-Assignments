@@ -1,13 +1,13 @@
-//1
+//1 NOT DONE
 // let name = "John";
 // const age = 101
 
 // function runForLoop(pets) {
 //     const petObjects = []
-//     for (let i = 0, i < pets.length; i++) {
-//         const pet = { type: pets[i] }name;         
+//     for (let i = 0; i < pets.length; i++) {
+//         const pet = { type: pets[i] }, name;         
 //         if (pets[i] === "cat") {
-//             name = "fluffy" {
+//             name = "fluffy" }
 //         else {
 //         name = "spot"
 //              }
@@ -20,30 +20,30 @@
 // }
 
 //2
-// const carrots = ["bright orange", "ripe", "rotten"]
-// const carrotTypes = carrots.map(carrot => ({type: "carrot", name: carrot}));
-// console.log(carrotTypes)
+const carrots = ["bright orange", "ripe", "rotten"]
+const carrotTypes = carrots.map(carrot => ({type: "carrot", name: carrot}));
+console.log(carrotTypes)
 
 //3
-// const people = [
-//     {name: 'Princess Peach', friendly: false},
-//     {name: 'Luigi', friendly: true},
-//     {name: 'Mario', friendly: true},
-//     {name: 'Bowser', friendly: false}
-// ]
-// const filterForFriendly = people.filter(person => person.friendly)
-// console.log(filterForFriendly)
+const people = [
+    {name: 'Princess Peach', friendly: false},
+    {name: 'Luigi', friendly: true},
+    {name: 'Mario', friendly: true},
+    {name: 'Bowser', friendly: false}
+]
+const filterForFriendly = people.filter(person => person.friendly)
+console.log(filterForFriendly)
 
 //4
-// const num = [4, 7]
-// const doMathSum = num.reduce((a, b) => a + b, 0)
-// console.log(doMathSum)
+const num = [4, 7]
+const doMathSum = num.reduce((a, b) => a + b, 0)
+console.log(doMathSum)
 
 //5 NOT DONE
 // const person = [
 //     {fName: 'Jane', lName: 'Doe', age: 100}
 // ]
-// const name = person.reduce(who => person.fName + person.lName)
+// const name = person.reduce((a, b) => fName + lName)
 // console.log(name)
 
 //6 NOT DONE
