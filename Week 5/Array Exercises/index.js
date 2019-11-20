@@ -73,14 +73,15 @@ const person = [
     { name: "Bob Ziroll", age: 100 }]
 // const pName = persons.map(nam => nam.name)
 // const pAge = persons.map(ages => ages.age) 
-// const isOldEnough = function() {
-//     if (person.age > 18) {
-//         return (person.name + (" Is old enough to go to the Matrix")) } else if(person.age < 18) {
-//         return (person.name + (" is not old enough to go to the Matrix"))
-//     }}
-//     console.log(person.age)
-const isOldEnough = (arr => arr.map(object => (object.age < 18 ? object.name : object.age)))
-console.log(isOldEnough(person) + (" Is old enough to go to the Matrix"))
+// const isOldEnough = 
+for(var i = 0; i < person.length; i++) {
+     if (person.age > 18) {
+        console.log(person.name + (" Is old enough to go to the Matrix")) } else if(person.age[i] < 18) {
+        return (person.name + (" is not old enough to go to the Matrix"))
+    }}
+    console.log(person.age[i])
+// const isOldEnough = (arr => arr.map(object => (object.age < 18 ? object.name : object.age)))
+// console.log(isOldEnough(person) + (" Is old enough to go to the Matrix"))
 
 //6 NOT DONE
 // const person = [
