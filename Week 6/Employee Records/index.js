@@ -11,3 +11,4 @@ this.status = status;
 }
  
 console.log(George)
+
